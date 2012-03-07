@@ -7,4 +7,3 @@ Makefile.PL
 META.yml
 README
 test.pl
-META.json                                Module JSON meta-data (added by MakeMaker)

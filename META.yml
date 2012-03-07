@@ -1,24 +1,24 @@
----
-abstract: 'Friendlier flags for B'
+--- #YAML:1.0
+name:               B-Flags
+version:            0.06
+abstract:           Friendlier flags for B
 author:
-  - 'Simon Cozens <simon@cpan.org>, Reini Urban <rurban@cpan.org>'
-build_requires:
-  ExtUtils::MakeMaker: 0
+    - Simon Cozens <simon@cpan.org>, Reini Urban <rurban@cpan.org>
+license:            unknown
+distribution_type:  module
 configure_requires:
-  ExtUtils::MakeMaker: 0
-dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.112621'
-license: unknown
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
-name: B-Flags
-no_index:
-  directory:
-    - t
-    - inc
-requires: {}
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:  {}
 resources:
-  license: http://dev.perl.org/licenses/
-  repository: http://github.com/rurban/b-flags
-version: 0.05
+    license:     http://dev.perl.org/licenses/
+    repository:  http://github.com/rurban/b-flags
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.56
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
