@@ -21,4 +21,4 @@ requires: {}
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/rurban/b-flags
-version: 0.07
+version: 0.08
