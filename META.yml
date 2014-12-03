@@ -3,15 +3,15 @@ abstract: 'Friendlier flags for B'
 author:
   - 'Simon Cozens <simon@cpan.org>, Reini Urban <rurban@cpan.org>'
 build_requires:
-  ExtUtils::MakeMaker: 0
+  ExtUtils::MakeMaker: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 0
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.72, CPAN::Meta::Converter version 2.131560'
+generated_by: 'ExtUtils::MakeMaker version 7.02, CPAN::Meta::Converter version 2.143240'
 license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: B-Flags
 no_index:
   directory:
@@ -21,4 +21,4 @@ requires: {}
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/rurban/b-flags
-version: 0.10
+version: '0.11'

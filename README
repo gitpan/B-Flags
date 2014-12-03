@@ -8,16 +8,13 @@ SYNOPSIS
       print $some_b_sv_object->flagspv;
 
 DESCRIPTION
+    Stringification of flags.
+
     By default, "$foo->flags" when passed an object in the "B" class will
     produce a relatively meaningless number, which one would need to grovel
     through the Perl source code in order to do anything useful with. This
     module adds "flagspv" to the SV and op classes and "privatepv" to the op
     classes, which makes them easier to understand.
-
-    Warning: This module is not *guaranteed* compatible with any version of
-    Perl below 5.7.0; however, I'd like to make it so compatible, so if it
-    fails to compile, mail me. There's probably an "#ifdef" I need to add
-    somewhere...
 
 METHODS
     OP->flagspv
@@ -34,6 +31,9 @@ METHODS
         sv->FLAGS and specialized AvFLAGS, GvFLAGS, CvFLAGS, ... in seperate
         struct fields.
 
+        Note that only the names of bitmasked SV and OP flags are returned,
+        not pseudo flags, like TAINTED, which is stored as magic.
+
 AUTHOR
     Simon Cozens, simon@cpan.org
 
@@ -46,5 +46,5 @@ SEE ALSO
     perl(1).
 
 LICENSE
-    AL&GPL. Copyright 2001 Simon Cozens Copyright 2010 Reini Urban
+    AL&GPL. Copyright 2001 Simon Cozens Copyright 2010,2013,2014 Reini Urban
 
